@@ -11,8 +11,17 @@ body{
 
 #ranNumGen{
 	background-color: green;
+	font-size: 70px;
+	font-weight: bold;
 }
 
-#winsLosses{
+#userTotalScore{
+	background-color: green;
+	font-size: 70px;
+	font-weight: bold;
+
+}
+
+.winsLosses{
 	background-color: yellow;
 }
