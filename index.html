@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crystal Collector</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="jumbotron">
+            <div class="container">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h2>Crystal Collector Game!</h2>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="instructions">
+                            <ul class="list">
+                                <li class="instructionA">You will be given a random number at the start of the game.
+                                    <li class="instructionB">There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
+                                        <li class="instructionC">You will win the game by matching your total score to a random number, you lose the game if your total score goes above the random number.
+                                            <li class="instructionD">The value of each crystal is hidden from you undil you click on it.
+                                                <li class="instructionE">Each time when the game starts, the game will change the values of each crystal
+                                                </li>
+                                            </li>
+                                        </li>
+                                    </li>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-md-3">
+                        <a href="#yellowCrystal" class="thumbnail" id="yellowCrystal">
+                            <img src="assets/images/yellowCrystal.png" alt="...">
+                        </a>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6 col-md-3">
+                            <a href="#blueCrystal" class="thumbnail" id="blueCrystal">
+                                <img src="assets/images/blueCrystal.png" alt="...">
+                            </a>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 col-md-3">
+                                <a href="#redCrystal" class="thumbnail" id="redCrystal">
+                                    <img src="assets/images/redCrystal.png" alt="...">
+                                </a>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6 col-md-3">
+                                    <a href="#greenCrystal" class="thumbnail" id="greenCrystal">
+                                        <img src="assets/images/greenCrystal.png" alt="...">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-8" id="ranNumGen">
+                                <h2>39<h2></div>
+		<div class="col-md-4" id="winsLosses"><ul><li><h3>Wins: </h3><li><h3> Losses: </h3></li></li></ul></div>
+	</div>
+  		</div>
+	</div>
+
+	<div class="panel panel-default">
+  		<div class="panel-body">
+    		<div id="totalScoreIs">
+				<p>Total Score Is:</p>
+			</div>
+  		</div>
+	</div>
+	<div class="panel panel-default">
+  		<div class="panel-body">
+    		<div id="totalScoreNum">
+				<h3>0</h3>
+			</div>
+		</div>
+	</div>
+  		</div>
+	</div>
+<!-- link javascript locally -->
+    <script src="assets/javascript/game.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

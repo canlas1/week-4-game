@@ -1,0 +1,18 @@
+
+body{
+	background-color: url("../images/background.jpg");
+}
+
+
+.thumbnail img {
+    height:100px;
+    width:100px;
+}
+
+#ranNumGen{
+	background-color: green;
+}
+
+#winsLosses{
+	background-color: yellow;
+}
