@@ -42,8 +42,6 @@ $(document).ready(function() {
         ranNumYellow = Math.floor((Math.random() * 12) + 1);
         ranNumGen = Math.floor((Math.random() * 101) + 19); //start 19-120 random
         $("#ranNumGen").html(ranNumGen);
-
-
         userTotalScore = 0;
 
 
@@ -55,7 +53,7 @@ $(document).ready(function() {
         console.log(ranNumGen);
         console.log(userTotalScore);
     };
-    startGame(); // need explination here???
+    startGame(); 
 
     // function startGame(){ // dont know why i need to end this function here?????
 
@@ -64,14 +62,18 @@ $(document).ready(function() {
 
     var logic = function() {
         if (userTotalScore === ranNumGen) {
-            wins = wins + 1;
+            wins++;
             $("#wins").html("Wins: " + wins);
             $(".list-group-item").html("You Win!")
+            $("#userTotalScore").html(0);
+            // $(".userTotalScore").html(userTotalScore)
             startGame();
         } else if (userTotalScore > ranNumGen) {
-            losses = losses + 1;
+            losses++;
             $("#losses").html("Losses: " + losses);
             $(".list-group-item").html("You Lose!")
+            $("#userTotalScore").html(0);
+            // $(".userTotalScore").html(userTotalScore)
             startGame();
         } else {
             userTotalScore;
