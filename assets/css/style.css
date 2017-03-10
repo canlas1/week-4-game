@@ -1,6 +1,7 @@
+.jumbotron{
 
-body{
-	background-color: url("../images/background.jpg");
+	background-image: url("../images/background.jpg");
+
 }
 
 
