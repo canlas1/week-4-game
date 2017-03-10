@@ -39,8 +39,7 @@ $(document).ready(function() {
             console.log(ranNumGen);
             console.log(userTotalScore);
     };
-    startGame(); //end this local loop use it for the logic() 
-
+    startGame(); // this worked better for me on the global scope.  I read it is better practice for to pass the varibles through the function and make them local but i found more logical to define as global variables.  So i can restart loops  
         console.log(startGame);
         console.log("is this working!!!!!!")
 
@@ -65,7 +64,7 @@ $(document).ready(function() {
             console.log(userTotalScore);
         }
     };
-    logic(); // end this local loop
+    logic(); // this worked better for me on the global scope.  I read it is better practice for to pass the varibles through the function and make them local but i found more logical to define as global variables.  So i can restart loops  
 
     $("#blueCrystal").on("click", function() {
         console.log($(this).html());
