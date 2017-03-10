@@ -42,10 +42,10 @@ $(document).ready(function() {
         ranNumYellow = Math.floor((Math.random() * 12) + 1);
         ranNumGen = Math.floor((Math.random() * 101) + 19); //start 19-120 random
         $("#ranNumGen").html(ranNumGen);
-        
-        
+
+
         userTotalScore = 0;
-        
+
 
 
         console.log(ranNumBlue);
@@ -65,12 +65,12 @@ $(document).ready(function() {
     var logic = function() {
         if (userTotalScore === ranNumGen) {
             wins = wins + 1;
-            $("#wins").html(wins);
+            $("#wins").html("Wins: " + wins);
             $(".list-group-item").html("You Win!")
             startGame();
         } else if (userTotalScore > ranNumGen) {
             losses = losses + 1;
-            $("#losses").html(losses);
+            $("#losses").html("Losses: " + losses);
             $(".list-group-item").html("You Lose!")
             startGame();
         } else {

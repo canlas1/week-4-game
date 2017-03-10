@@ -1,28 +1,30 @@
-.jumbotron{
-
-	background-image: url("../images/background.jpg");
-
+h1 {
+    text-align: center
 }
 
+.jumbotron {
+    background-image: url("../images/background.jpg");
+}
+
+.list-group-item {
+    font-size: 40px;
+    font-weight: bold;
+}
 
 .thumbnail img {
-    height:100px;
-    width:100px;
+    height: 100px;
+    width: 100px;
 }
 
-#ranNumGen{
-	background-color: green;
-	font-size: 70px;
-	font-weight: bold;
+#ranNumGen {
+    background-color: yellow;
+    font-size: 70px;
+    font-weight: bold;
 }
 
-#userTotalScore{
-	background-color: green;
-	font-size: 70px;
-	font-weight: bold;
-
-}
-
-.winsLosses{
-	background-color: yellow;
+#userTotalScore {
+    text-align: center;
+    background-color: yellow;
+    font-size: 70px;
+    font-weight: bold;
 }
