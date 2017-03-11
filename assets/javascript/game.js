@@ -29,14 +29,14 @@ $(document).ready(function() {
         if (userTotalScore === ranNumGen) {
             wins++;
             $("#wins").html("Wins: " + wins);
-            $(".list-group-item").html("You Win!")
+            $(".list-group-item").html("You Win!");
             $("#userTotalScore").html(0);
             // $(".userTotalScore").html(userTotalScore)
             startGame();
         } else if (userTotalScore > ranNumGen) {
             losses++;
             $("#losses").html("Losses: " + losses);
-            $(".list-group-item").html("You Lose!")
+            $(".list-group-item").html("You Lose!");
             $("#userTotalScore").html(0);
             // $(".userTotalScore").html(userTotalScore)
             startGame();
